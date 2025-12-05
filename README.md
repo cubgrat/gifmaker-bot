@@ -2,6 +2,14 @@
 
 Telegram бот на Golang для конвертации видео в GIF файлы.
 
+## Архитектура
+
+Проект использует луковую (onion) архитектуру с разделением на слои:
+- **Domain** (`internal/domain`) - бизнес-сущности и доменная логика
+- **Application** (`internal/application`) - use cases и сервисы приложения
+- **Infrastructure** (`internal/infrastructure`) - внешние зависимости (Telegram API, FFmpeg, файловая система)
+- **Presentation** (`internal/presentation`) - обработчики запросов и интерфейсы пользователя
+
 ## Возможности
 
 - Принимает видео файлы длительностью до 20 секунд
