@@ -1,0 +1,13 @@
+bot:
+  token: "YOUR_BOT_TOKEN_HERE"
+
+gif:
+  quality: "medium"  # low, medium, high
+  fps: 10            # frames per second
+  width: 480         # output width (0 = auto, keep aspect ratio)
+  colors: 256        # number of colors (2-256)
+
+processing:
+  max_concurrent: 3  # maximum concurrent video processing tasks
+  max_video_duration: 20  # maximum video duration in seconds
+
